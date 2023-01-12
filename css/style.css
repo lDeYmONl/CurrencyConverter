@@ -1,0 +1,152 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+button {
+  background: none;
+  border: none;
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.converter-rate {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  text-align: center;
+}
+.converter-rate__text, .converter-rate__rate {
+  font-size: 26px;
+  font-weight: 500;
+}
+
+.converter-from,
+.converter-to {
+  display: flex;
+  justify-content: center;
+}
+.converter-from__count,
+.converter-to__count {
+  margin: 0 0.75%;
+  width: 48%;
+  line-height: 1.5;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #000000;
+  border-radius: 0;
+}
+.converter-from__count::-webkit-inner-spin-button,
+.converter-to__count::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.converter-from__currency,
+.converter-to__currency {
+  line-height: 1.5;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #000000;
+  border-radius: 0;
+}
+
+.converter-to {
+  margin-top: 10px;
+}
+
+.currency-rate {
+  margin-top: 50px;
+}
+.currency-rate__base {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.currency-rate__base-text {
+  font-size: 22px;
+  font-weight: 400;
+}
+.currency-rate__select {
+  line-height: 1.5;
+  height: 50px;
+  padding-left: 10px;
+  border: 1px solid #ccc;
+  outline: none;
+  color: #000000;
+  border-radius: 0;
+}
+.currency-rate__table {
+  margin-top: 15px;
+  width: 100%;
+  border-collapse: collapse;
+}
+.currency-rate__table th {
+  background-color: #f2f2f2;
+  border: 1px solid #ddd;
+}
+.currency-rate__list tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.currency-rate__list tr:hover {
+  background-color: #ddd;
+}
+.currency-rate__list td {
+  border: 1px solid #ddd;
+}
+.currency-rate__list td:nth-child(2) {
+  text-align: right;
+  padding-right: 5px;
+}
+
+@media (min-width: 1376px) {
+  .container {
+    width: 1320px;
+  }
+}
+@media (max-width: 1376px) {
+  .container {
+    width: 100%;
+  }
+}

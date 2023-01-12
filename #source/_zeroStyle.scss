@@ -1,0 +1,32 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  display: inline-block;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+h1,
+h2 {
+  text-decoration: none;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+button {
+  background: none;
+  border: none;
+}

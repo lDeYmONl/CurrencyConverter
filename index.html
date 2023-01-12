@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" href="" type="image/gif" />
+    <title>Курси валют</title>
+    <!--Стилі-->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./#source/mainStyle.scss" />
+    <!--Jquery-->
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+    <meta name="viewport" content="width=device-width, maximum-scale=1.0" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="converter-wrapper">
+        <div class="converter-rate">
+          <p class="converter-rate__text">Курс:</p>
+          <p class="converter-rate__rate">0.0</p>
+        </div>
+        <div class="converter">
+          <div class="converter-from">
+            <input
+              id="converter-from__count"
+              type="number"
+              class="converter-from__count"
+              placeholder="0.00"
+            />
+            <select
+              id="converter-from__currency"
+              class="converter-from__currency"
+            ></select>
+          </div>
+          <div class="converter-to">
+            <input
+              id="converter-to__count"
+              type="number"
+              class="converter-to__count"
+              placeholder="0.00"
+            />
+            <select
+              id="converter-to__currency"
+              class="converter-to__currency"
+            ></select>
+          </div>
+        </div>
+      </div>
+      <div class="currency-rate">
+        <div class="currency-rate__base">
+          <p class="currency-rate__base-text">Базова валюта:</p>
+          <select
+            id="currency-rate__select"
+            class="currency-rate__select"
+          ></select>
+        </div>
+        <table class="currency-rate__table">
+          <thead>
+            <tr>
+              <th>Валюта</th>
+              <th>Курс</th>
+            </tr>
+          </thead>
+
+          <tbody class="currency-rate__list" id="currency-rate__list"></tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js.js"></script>
+  </body>
+</html>
